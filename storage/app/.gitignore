@@ -1,3 +1,5 @@
 *
+gallery_images/
+parts_images/
 !public/
 !.gitignore
