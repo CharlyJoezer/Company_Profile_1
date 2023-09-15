@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_parts{
+    position: relative;
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.navigation_pages{
+    font-size: 12px;
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+.title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 3px solid #3b509f;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.form_input{
+    margin-bottom: 10px;
+}
+.label_input{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form_input input{
+    width: 400px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 3px;
+}
+.preview_image{
+    width: 250px;
+    height: 150px;
+    border: 1px dotted #ccc;
+    margin-bottom: 5px;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+.submit_form button{
+    background-color: #3b509f;
+    color: white;
+    font-family: 'Montserrat';
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.input_invalid{
+    border: 1px solid red!important;
+}
+.invalid_request {
+    font-family: sans-serif;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 3px;
+}

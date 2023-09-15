@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_sidebar{
+    min-width: 220px;
+    max-width: 220px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px #eee;
+    border-right: 1px solid #eee;
+    position: fixed;
+    left: 0;
+}
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+}
+.header img{
+    width: 40px;
+}
+.header .profil_company {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: black;
+    line-height: 0.9;
+}
+.profil_company .name_company{
+    font-size: 15px;
+    font-weight: bold;
+}
+.profil_company span{
+    font-size: 10px;
+}
+.list_pages{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #1b2446;
+}
+.list_pages .pages_link{
+    font-family: 'Montserrat';
+    padding: 15px 20px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.pages_link:hover{
+    transition: 0.3s;
+    background-color: #111;
+}
+.pages_link img{
+    width: 15px;
+}
+.pages_link div {
+    padding-left: 8px;
+    font-weight: 500;
+}

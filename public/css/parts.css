@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_parts {
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    padding: 15px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+.wrapper_title_parts {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #3b509f;
+}
+.wrapper_search_parts {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+.search_parts {
+    width: fit-content;
+    position: relative;
+    box-sizing: border-box;
+}
+.search_parts input {
+    padding: 10px 30px;
+    padding-left: 45px;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    background-color: #3b519ff7;
+    color: white;
+    transition: 0.2s;
+}
+.search_parts input:focus{
+    background-color: #3b509f;
+}
+.search_parts input::placeholder{
+    color: white;
+}
+@media screen and (max-width: 430px){
+    .search_parts {
+        width: 100%;
+    }
+    .search_parts input {
+        width: 100%;
+    }
+}
+.search_parts img {
+    position: absolute;
+    left: 10px;
+    width: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    cursor: pointer;
+}
+.message_invalid_search{
+    color: red;
+    font-size: 11px;
+    font-family: 'Montserrat';
+}
+.wrapper_list_parts {
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+.list_parts {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    box-sizing: border-box;
+}
+.parts_item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}
+.parts_item .image {
+    width: 100%;
+    max-height: 180px;
+    overflow: hidden;
+}
+.parts_item .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    box-sizing: border-box;
+    transition: 0.3s;
+    filter: brightness(100%);
+}
+.parts_item img:hover {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+.parts_item .desc {
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    color: black;
+    background-color: white;
+}
+.parts_item .desc .name {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.see_more {
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4f61a3;
+    transition: 0.2s;
+    padding-top: 20px;
+}
+.see_more:hover {
+    color: #4f61a3;
+}
+.see_more a {
+    text-decoration: none;
+}
+.prev-parts{
+    margin-right: 15px;
+    color: #aaa;
+    font-size: 22px;
+}
+.next-parts{
+    margin-left: 15px;
+    color: #aaa;
+    font-size: 22px;
+}
+.prev-parts-active{
+    margin-right: 15px;
+    color: #1b417b;
+    cursor: pointer;
+    font-size: 22px;
+}
+.next-parts-active{
+    margin-left: 15px;
+    color: #1b417b;
+    cursor: pointer;
+    font-size: 22px;
+}
+@media screen and (max-width: 1000px) {
+    .container_parts {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .list_parts {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+    .parts_item .desc .name {
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .parts_item .desc .sub_text {
+        font-size: 10px;
+        line-height: 1.5;
+        color: #555;
+    }
+}
+@media screen and (max-width: 500px) {
+    .search_parts input {
+        font-size: 14px;
+    }
+    .list_parts {
+        grid-template-columns: 1fr 1fr;
+    }
+}

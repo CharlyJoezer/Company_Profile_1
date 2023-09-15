@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_service_support {
+    padding: 15px;
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.container_service_support .title {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3b509f;
+}
+.wrapper_content {
+    width: 100%;
+}
+.content {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.content .content_title {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    color: #333;
+    text-transform: uppercase;
+    width: 100%;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+.content .desc {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    width: 100%;
+}
+.content .desc ul {
+    margin: 0px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    height: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content .desc ul.more {
+    overflow: none;
+    height: fit-content;
+}
+.content .desc ul li {
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+}
+.content .see_more_btn {
+    padding: 15px 10px;
+    background-color: #3b509f;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat";
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+.content .see_more_btn:hover {
+    background-color: #2e4598;
+}
+@media screen and (max-width:1000px){
+    .container_service_support {
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+.container_beranda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper_logo img {
+    width: 200px;
+}

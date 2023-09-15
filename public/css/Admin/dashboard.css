@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container_dashboard{
+    display: flex;
+}
+.container_content{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 220px;
+    background-color: #eee;
+}

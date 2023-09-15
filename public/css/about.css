@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_about {
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    padding: 15px;
+    margin-bottom: 100px;
+}
+.wrapper_content_about{
+    box-sizing: border-box;
+}
+.content_about{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+.wrapper_logo_company{
+    border: 10px solid #646f98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    box-shadow: -10px -10px #b65e60;
+}
+.content_about .logo_company{
+    width: 100px;
+}
+.wrapper_profil_company{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper_profil_company .title{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #3b509f;
+}
+.content_about .name_company{
+    font-size: 16px;
+    margin: 0px;
+    color: #333;
+}
+.content_about .desc_company{
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+    .container_about {
+        width: 100%;
+    }
+}

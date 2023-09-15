@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.container_parts {
+    position: relative;
+    min-height: 100vh;
+    padding: 15px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.navigation_pages {
+    font-size: 12px;
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+}
+.title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 3px solid #3b509f;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.wrapper_list_action {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.create_action {
+    height: 35px;
+    padding: 8px 10px;
+    background-color: #2d47a4;
+    border: 1px solid #2d47a4;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 12px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.2s;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.create_action:hover {
+    background-color: #3b509f;
+}
+.create_action img {
+    width: 20px;
+}
+.create_action span {
+    padding-left: 5px;
+}
+.wrapper_search_input{
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+}
+.search_input{
+    height: 35px;
+    width: 250px;
+    box-sizing: border-box;
+    border: none;
+    padding: 3px 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    background-color: transparent;
+    padding-right: 33px;
+}
+.wrapper_search_input img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+.table_parts {
+    border-collapse: collapse;
+    font-family: "Montserrat";
+    width: 1000px;
+}
+.table_parts thead {
+    background-color: #3b509f;
+}
+.table_parts thead th {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    color: white;
+}
+.table_parts tbody {
+    background-color: white;
+}
+.table_parts tbody tr td {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 12px;
+    font-family: "Montserrat";
+}
+.table_parts .image_parts {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    width: fit-content;
+}
+.table_parts .image_parts img {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #eee;
+    object-fit: contain;
+    object-position: center;
+}
+.table_parts .name_parts {
+    padding: 25px;
+    font-size: 13px;
+}
+.setting_parts {
+    padding: 5px;
+}
+.setting_parts .list_action {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+.setting_parts .list_action img {
+    display: block;
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.edit_action {
+    background-color: orange;
+}
+.delete_action {
+    background-color: red;
+}
+.message_success {
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 132, 0, 0.716);
+    font-size: 12px;
+    font-family: "Montserrat";
+    width: fit-content;
+    color: white;
+}
+.message_failed {
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(200, 13, 13);
+    font-size: 12px;
+    font-family: "Montserrat";
+    width: fit-content;
+    color: white;
+}
+.wrapper_modal_delete {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.451);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.wrapper_modal_delete.show {
+    display: flex;
+}
+.modal_delete {
+    width: 500px;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.modal_delete .modal_header {
+    padding: 10px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.modal_form {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 12px;
+}
+.modal_cancel {
+    border: 1px solid#3b509f;
+    background-color: white;
+    box-sizing: border-box;
+    color: #3b509f;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.modal_submit {
+    background-color: red;
+    box-sizing: border-box;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal_submit:hover {
+    background-color: rgb(194, 0, 0);
+}
+.see_more {
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4f61a3;
+    transition: 0.2s;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'arial';
+}
+.see_more:hover {
+    color: #1b417b;
+}
+.see_more a {
+    text-decoration: none;
+}
+.prev-parts{
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+}
+.current-page{
+    padding: 5px 12px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.next-parts{
+    padding: 5px 12px;
+    border: 1px solid #ccc;
+}
+.see_more_range{
+    padding-top: 5px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
